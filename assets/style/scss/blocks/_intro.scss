@@ -40,7 +40,7 @@
         }
 
         &__video {
-            @include video_media-query_block;
+            @include intro_media-query_block;
         }
     }
 }
@@ -52,7 +52,7 @@
         }
 
         &__video {
-            @include video_media-query_block;
+            @include intro_media-query_block;
         }
     }
 }

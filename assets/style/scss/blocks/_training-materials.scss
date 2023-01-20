@@ -1,41 +1,34 @@
-// блок "к уроку"
+/* training-materials */
 .main__training-materials {
-    color: $text-color;
     max-width: 1200px;
-    max-height: 570px;
-    margin-top: 1rem;
-    margin-bottom: 2em;
+    max-height: 647px;
+
     padding-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../img/cube.png), url(../img/formula.png);
-    background-repeat: no-repeat;
-    background-position: bottom 7px left 5px, top right;
-    background-color: rgba(236, 229, 229, 0.37);
-    border: none;
-    border-radius: 1em;
+
+    @include main-page_blocks_margins;
+    @include main-page_blocks_design;
 }
 
 .main__training-materials_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 
 .main__training-materials_title {
     padding: 2%;
     text-align: center;
-    font-family: $title-font;
     font-size: 2em;
-    font-weight: 600;
+    @include main_text;
 }
 
 .main__training-materials_card {
-    max-width: 200px;
+    max-width: 250px;
     min-width: 100px;
     margin: 0.7rem;
     text-align: center;
+    background-color: rgba(236, 229, 229, 0.37);
 
     .card-text {
         margin-top: 15%;
@@ -51,7 +44,7 @@
     display: block;
     width: 100%;
     border-radius: 0.375rem;
-    ;
+
     padding: 6px 12px;
     text-decoration: none;
     color: #FFF;
