@@ -626,19 +626,15 @@
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: $block-bg-color; */
   background-color: rgba(236, 229, 229, 0.37);
   border: none;
   border-radius: 1em;
-  /* box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
-       inset 0px 4px 16px rgba(255, 255, 255, 0.503); */
 }
 
 .edu-card {
   display: grid;
   grid-template-columns: 1fr 2fr 3fr;
   grid-template-rows: 0.5fr 1fr;
-  /*  max-height: 120px; */
   margin: 0.7rem 2rem 2rem;
 }
 .edu-card__img {
@@ -691,8 +687,6 @@
     min-height: fit-content;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /*         margin-left: auto;
-    margin-right: auto; */
   }
   .education-title {
     margin: 1rem auto;
@@ -729,10 +723,7 @@
   .education-title {
     font-size: 1em;
   }
-  .edu-card__univers {
-    font-size: 0.7em;
-  }
-  .edu-card__years {
+  .edu-card__univers, .edu-card__years {
     font-size: 0.7em;
   }
 }
@@ -794,7 +785,7 @@
 }
 
 .about__img {
-  max-height: 700px;
+  width: 70%;
   grid-column: 2/3;
   margin-left: auto;
   margin-right: 5em;
