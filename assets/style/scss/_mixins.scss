@@ -1,0 +1,13 @@
+@mixin main_text {
+    font-family: $title-font;
+    font-weight: 600;
+    color: $text-color;
+}
+
+@mixin about_images_block {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-height: 500px;
+    justify-items: center;
+    align-items: center;
+}
