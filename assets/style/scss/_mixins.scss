@@ -11,3 +11,9 @@
     justify-items: center;
     align-items: center;
 }
+
+@mixin video_media-query_block {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}

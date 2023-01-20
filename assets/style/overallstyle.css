@@ -341,9 +341,9 @@
     font-size: 1.4rem;
   }
   .main__video {
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
   }
 }
 @media screen and (max-width: 320px) {
