@@ -1,74 +1,63 @@
-$bgFooter: #394C7D;
-
+/* footer */
 .footer {
     padding-top: 5%;
     background: $footer-bg-color;
     min-height: 250px;
 
-    .footer-information__link {
-        color: $footer-information__link;
-    }
-
-    a:hover {
-        color: $footer-information__link_hover;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .footer__menu-link {
+    &__menu-link {
         color: $footer__menu-link;
     }
 
-    .footer__menu-link:hover {
+    &__menu-link:hover {
         color: $footer__menu-link_hover;
     }
 
-    .footer__menu-link:visited {
+    &__menu-link:visited {
         color: $footer__menu-link_visited;
     }
 
-    .footer__content_dzen {
+    &__content_dzen {
         width: 18.5%;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        .footer__titile {
-            text-align: center;
-        }
-
-        .footer__content {
-            text-align: center;
-        }
-
-        .footer-information__link {
-            text-align: center;
-        }
-    }
-
-    @media screen and (max-width:767px) {
-        // padding: 10%;
-
-        .footer__titile {
-            text-align: center;
-        }
-
-        .footer__content {
-            text-align: center;
-        }
-
-        .footer-information__link {
-            text-align: center;
-        }
-
-        .footer__menu {
-            text-align: center;
-        }
+    &__content-link {
+        text-decoration: none;
+        color: $footer-information__link;
     }
 }
 
-.footer__content-link {
+a {
     text-decoration: none;
-    color: $footer-information__link;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer__titile {
+        text-align: center;
+    }
+
+    .footer__content {
+        text-align: center;
+    }
+
+    .footer-information__link {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .footer__titile {
+        text-align: center;
+    }
+
+    .footer__content {
+        text-align: center;
+    }
+
+    .footer-information__link {
+        text-align: center;
+    }
+
+    .footer__menu {
+        text-align: center;
+    }
 }
