@@ -1,11 +1,10 @@
 /*video block*/
+
 .video-block {
     display: flex;
     flex-direction: column;
 
-    max-width: 1200px;
-    max-height: 647px;
-
+    @include main-page_blocks_size;
     @include main-page_blocks_margins;
     @include main-page_blocks_design;
 }
@@ -38,7 +37,7 @@
     margin: 0.5rem;
     text-align: center;
     border: none;
-    background-color: rgba(236, 229, 229, 0.37);
+    background-color: $cards-bg-color;
 }
 
 .card-img-top {

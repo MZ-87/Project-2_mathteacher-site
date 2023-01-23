@@ -988,9 +988,9 @@ a {
 }
 /* training-materials */
 .main__training-materials {
+  padding-bottom: 25px;
   max-width: 1200px;
   max-height: 647px;
-  padding-bottom: 25px;
   margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -1020,7 +1020,7 @@ a {
 .main__training-materials_card {
   max-width: 250px;
   min-width: 100px;
-  margin: 0.7rem;
+  margin: 0.5rem;
   text-align: center;
   background-color: rgba(236, 229, 229, 0.37);
 }

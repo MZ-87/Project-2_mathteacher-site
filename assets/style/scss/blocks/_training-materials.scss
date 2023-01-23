@@ -1,10 +1,8 @@
 /* training-materials */
 .main__training-materials {
-    max-width: 1200px;
-    max-height: 647px;
-
     padding-bottom: 25px;
 
+    @include main-page_blocks_size;
     @include main-page_blocks_margins;
     @include main-page_blocks_design;
 }
@@ -26,7 +24,7 @@
 .main__training-materials_card {
     max-width: 250px;
     min-width: 100px;
-    margin: 0.7rem;
+    margin: 0.5rem;
     text-align: center;
     background-color: rgba(236, 229, 229, 0.37);
 
