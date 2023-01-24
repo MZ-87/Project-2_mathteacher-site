@@ -34,7 +34,7 @@
     &__slogan {
         margin: 5% auto 12% auto;
         font-family: $main-font;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
 
         color: $text-color;
     }
@@ -46,7 +46,7 @@
         border: none;
 
         font-family: $main-font;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: center;
 
         background-color: $pastel-warm-color;
@@ -57,8 +57,8 @@
         }
 
         &:hover {
-            padding: 2% 8%;
             background-color: $vivid-warm-color;
+            transform: scale(1.05);
         }
     }
 }
@@ -184,7 +184,7 @@
 
         &__title {
             font-size: 0.8rem;
-            
+
             color: darken($text-color, $amount: 10%);
 
             &_vivid {

@@ -2,13 +2,14 @@
     font-family: $title-font;
     font-weight: 600;
     color: $text-color;
+    // color: red;
 }
 
-@mixin main-page-block__title{
-    @include main_text;
-    font-size: 2em;
-    margin: 2rem auto;
-}
+// @mixin main-page-block__title{
+//     @include main_text;
+//     font-size: 2em;
+//     margin: 2rem auto;
+// }
 
 @mixin about_images_block {
     display: grid;
@@ -16,12 +17,6 @@
     max-height: 500px;
     justify-items: center;
     align-items: center;
-}
-
-@mixin intro_media-query_block {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @mixin main-page_block_size {

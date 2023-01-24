@@ -12,13 +12,13 @@
     }
 
     &__title {
-        margin-left: 0;
+        margin-left: 1em;
         margin-bottom: 0;
 
         font-family: $main-font;
-        font-style: italic;
-        font-size: 1.5rem;
-
+        // font-style: italic;
+        font-size: 2rem;
+        font-weight: 700;
         color: $text-color;
     }
 }
@@ -30,12 +30,13 @@
 
     &__item {
         font-family: $main-font;
+        font-size: 1.2em;
         padding: 0.7% 4%;
-        border-radius: 20px;
+        border-radius: 10px;
 
         background-color: $pastel-cold-color;
 
-        a {
+        a {            
             text-decoration: none;
             color: white;
         }
@@ -46,7 +47,7 @@
 
         &:hover {
             background-color: $vivid-cold-color;
-            padding: 0.7% 6%;
+            transform: scale(1.05);
 
             &:last-child {
                 background-color: $vivid-warm-color;
@@ -124,33 +125,33 @@
 }
 
 @media screen and (max-width:320px) {
-.header {
-    grid-template-columns: 15% 1fr 30%;
+    .header {
+        grid-template-columns: 15% 1fr 30%;
 
-    &__logo {
-        width: 100%;
-    }
+        &__logo {
+            width: 100%;
+        }
 
-    &__title {
-        align-self: center;
-        width: 40%;
-        margin-left: 5%;
-        margin-bottom: 0;
+        &__title {
+            align-self: center;
+            width: 40%;
+            margin-left: 5%;
+            margin-bottom: 0;
 
-        font-size: 0.7rem;
-        line-height: 100%;
-    }
-}
-
-.nav {
-    &__item {
-        padding: 5%;
-        margin-bottom: 5%;
-        text-align: center;
-
-        &:hover {
-            padding: 8%;
+            font-size: 0.7rem;
+            line-height: 100%;
         }
     }
-}
+
+    .nav {
+        &__item {
+            padding: 5%;
+            margin-bottom: 5%;
+            text-align: center;
+
+            &:hover {
+                padding: 8%;
+            }
+        }
+    }
 }

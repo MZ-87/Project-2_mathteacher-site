@@ -86,6 +86,7 @@
     &_sp {
         margin: 1em;
         border: none;
+        font-family: $main-font;
     }
 }
 
@@ -93,8 +94,6 @@
     .main-page-block {
         max-width: 95%;
         max-height: 460px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .card-body {
@@ -111,8 +110,6 @@
     .main-page-block {
         max-width: 95%;
         max-height: 427px;
-        margin-left: auto;
-        margin-right: auto;
 
         &__title {
             font-size: 1.5em;

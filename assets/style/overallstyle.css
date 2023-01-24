@@ -1,30 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap");
-.footer__titile {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-}
-
-.footer__content {
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-}
-
-.edu-card__univers,
-.edu-card__years {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  color: #5E5E5E;
-}
-
-.edu-card__prof {
-  font-family: "Rubik", sans-serif;
-  color: #5E5E5E;
-}
-
-.btn-primary_sp {
-  font-family: "Rubik", sans-serif;
-}
-
 .header {
   display: grid;
   grid-template-columns: 5% 1fr 60%;
@@ -37,11 +11,11 @@
   width: 90%;
 }
 .header__title {
-  margin-left: 0;
+  margin-left: 1em;
   margin-bottom: 0;
   font-family: "Rubik", sans-serif;
-  font-style: italic;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #5E5E5E;
 }
 
@@ -52,8 +26,9 @@
 }
 .nav__item {
   font-family: "Rubik", sans-serif;
+  font-size: 1.2em;
   padding: 0.7% 4%;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #5EC6C7;
 }
 .nav__item a {
@@ -65,7 +40,7 @@
 }
 .nav__item:hover {
   background-color: #4EB6B7;
-  padding: 0.7% 6%;
+  transform: scale(1.05);
 }
 .nav__item:hover:last-child {
   background-color: #FF4F55;
@@ -171,7 +146,7 @@
 .main__slogan {
   margin: 5% auto 12% auto;
   font-family: "Rubik", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #5E5E5E;
 }
 .main__about {
@@ -180,7 +155,7 @@
   border-radius: 10px;
   border: none;
   font-family: "Rubik", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   background-color: #FF9190;
 }
@@ -189,8 +164,8 @@
   color: white;
 }
 .main__about:hover {
-  padding: 2% 8%;
   background-color: #FF4F55;
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -301,49 +276,55 @@
     padding: 3% 5%;
   }
 }
-.main_intro {
+.main-page-block_intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 3rem;
-}
-.main__subtitle {
-  margin-bottom: 3%;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 3rem;
-  text-align: center;
-  color: #5E5E5E;
-}
-.main__video {
-  border-radius: 30px;
-  width: 50%;
+  padding-bottom: 25px;
+  max-width: 1200px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(236, 229, 229, 0.37);
+  border: none;
+  border-radius: 1em;
+  box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37), inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .main__subtitle {
+.main-page-block__title_intro {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #5E5E5E;
+  font-size: 2.5em;
+  margin: 2rem auto;
+}
+
+.main-page-block__video {
+  max-width: 90%;
+  margin: 1em auto;
+  border: none;
+  border-radius: 1em;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .main-page-block_intro {
+    max-width: 95%;
+  }
+  .main-page-block__title_intro {
     font-size: 1.6rem;
   }
 }
-@media screen and (min-width: 321px) and (max-width: 767px) {
-  .main__subtitle {
-    font-size: 1.4rem;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-page-block_intro {
+    max-width: 95%;
   }
-  .main__video {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  .main-page-block__title_intro {
+    font-size: 1.5em;
   }
 }
-@media screen and (max-width: 320px) {
-  .main__subtitle {
-    font-size: 1.2rem;
-  }
-  .main__video {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 767px) {
+  .main-page-block__title_intro {
+    font-size: 1.2em;
   }
 }
 .main-page-block {
@@ -431,14 +412,13 @@
 .btn-primary_sp {
   margin: 1em;
   border: none;
+  font-family: "Rubik", sans-serif;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .main-page-block {
     max-width: 95%;
     max-height: 460px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .card-body {
     min-height: -webkit-fit-content;
@@ -454,8 +434,6 @@
   .main-page-block {
     max-width: 95%;
     max-height: 427px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .main-page-block__title {
     font-size: 1.5em;
@@ -569,19 +547,11 @@
   }
 }
 /*education block*/
-.education-block {
+.main-page-education-block {
   margin-top: 2rem;
 }
 
-.education-title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  color: #5E5E5E;
-  font-size: 2em;
-  margin: 2rem auto;
-}
-
-.education-container {
+.main-page-education-container {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -615,14 +585,22 @@
 .edu-card__univers {
   grid-row: 1/2;
   grid-column: 2/4;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #5E5E5E;
 }
 .edu-card__years {
   grid-row: 2/3;
   grid-column: 2/3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #5E5E5E;
 }
 .edu-card__prof {
   grid-row: 2/3;
   grid-column: 3/4;
+  font-family: "Rubik", sans-serif;
+  color: #5E5E5E;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -700,6 +678,10 @@
   background: #5EC6C7;
   min-height: 250px;
 }
+.footer__titile {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
 .footer__menu-link {
   color: rgb(234, 239, 242);
 }
@@ -708,6 +690,10 @@
 }
 .footer__menu-link:visited {
   color: #d1eef4;
+}
+.footer__content {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
 }
 .footer__content_dzen {
   width: 18.5%;
