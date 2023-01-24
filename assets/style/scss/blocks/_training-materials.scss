@@ -1,40 +1,42 @@
 /* training-materials */
-.main__training-materials {
+.training-materials-block {
     padding-bottom: 25px;
-
-    @include main-page_blocks_size;
-    @include main-page_blocks_margins;
-    @include main-page_blocks_design;
-}
-
-.main__training-materials_container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
+    @include main-page_block_size;
+    @include main-page_block_margins;
+    @include main-page_block_design;
 }
 
-.main__training-materials_title {
-    padding: 2%;
-    text-align: center;
-    font-size: 2em;
-    @include main_text;
+// .training-materials_title {
+//     margin: 2rem auto;
+// }
+
+.training-materials_container {
+    @include main-page_block_card-container;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-.main__training-materials_card {
-    max-width: 250px;
-    min-width: 100px;
-    margin: 0.5rem;
-    text-align: center;
-    background-color: rgba(236, 229, 229, 0.37);
+.card {
+    @include main-page_block_card;
+}
 
-    .card-text {
-        margin-top: 15%;
-    }
+.card-text {
+    margin-top: 15%;
+}
 
-    .card-img-top {
-        border-radius: 1em;
-    }
+.card-img-top {
+    object-fit: cover;
+    max-height: 250px;
+}
+
+.card-body {
+    min-height: 200px;
+    padding: 1rem 1rem 0;
 }
 
 .main__training-materials_button {

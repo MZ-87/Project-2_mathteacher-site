@@ -17,12 +17,13 @@
     margin-left: auto;
     margin-right: auto;
 }
-@mixin main-page_blocks_size{
+
+@mixin main-page_block_size {
     max-width: 1200px;
-    max-height: 647px; 
+    max-height: 647px;
 }
 
-@mixin main-page_blocks_design {
+@mixin main-page_block_design {
     background-color: $cards-bg-color;
     border: none;
     border-radius: 1em;
@@ -30,9 +31,29 @@
         inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
-@mixin main-page_blocks_margins{
+@mixin main-page_block_margins {
     margin-top: 1rem;
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin main-page_block_card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow-y: scroll;
+}
+
+@mixin main-page_block_card ($max-width: 250px, $min-width: 100px) {
+    max-width: $max-width;
+    min-width: $min-width;
+    margin: 0.5rem;
+    text-align: center;
+    background-color: $cards-bg-color;
+    border: none;
 }

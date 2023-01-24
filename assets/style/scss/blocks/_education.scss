@@ -3,9 +3,9 @@
     margin-top: 2rem;
 }
 
-.education-title {
-    margin: 2rem auto;
-}
+// .education-title {
+//     margin: 2rem auto;
+// }
 
 .education-container {
     display: flex;
@@ -14,8 +14,8 @@
     max-width: 1200px;
     min-height: fit-content;
 
-    @include main-page_blocks_margins;
-    @include main-page_blocks_design;
+    @include main-page_block_margins;
+    @include main-page_block_design;
 }
 
 .edu-card {

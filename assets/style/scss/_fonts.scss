@@ -15,10 +15,11 @@
 
 //video, education
 .video-title,
-.education-title {
+.education-title,
+.training-materials_title {
     @include main_text;
     font-size: 2em;
-    
+    margin: 2rem auto;
 }
 
 .card-title,

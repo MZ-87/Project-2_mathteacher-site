@@ -4,40 +4,26 @@
     display: flex;
     flex-direction: column;
 
-    @include main-page_blocks_size;
-    @include main-page_blocks_margins;
-    @include main-page_blocks_design;
+    @include main-page_block_size;
+    @include main-page_block_margins;
+    @include main-page_block_design;
 }
 
-.video-title {
-    margin: 2rem auto;
-}
+// .video-title {
+//     margin: 2rem auto;
+// }
 
 .video-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    @include main-page_block_card-container;
 
-    margin-left: 1rem;
-    margin-right: 1rem;
-    overflow-y: scroll;
-}
-
-.video-container::-webkit-scrollbar {
-    display: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .card {
-    max-width: 200px;
-    min-width: 100px;
-
     min-height: 250px;
-
-    margin: 0.5rem;
-    text-align: center;
-    border: none;
-    background-color: $cards-bg-color;
+    @include main-page_block_card (200px);
 }
 
 .card-img-top {
