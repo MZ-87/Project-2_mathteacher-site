@@ -1,18 +1,42 @@
 .main-page-block {
     display: flex;
     flex-direction: column;
+    padding-bottom: 25px;
 
-    @include main-page_block_size;
-    @include main-page_block_margins;
-    @include main-page_block_design;
+    max-width: 1200px;
+    max-height: 647px;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $cards-bg-color;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
+        inset 0px 4px 16px rgba(255, 255, 255, 0.503);
+    // @include main-page_block_size;
+    // @include main-page_block_margins;
+    // @include main-page_block_design;
 }
 
 .main-page-block__title {
-    @include main-pahe-block__title;
+    @include main_text;
+    font-size: 2em;
+    margin: 2rem auto;
 }
 
 .main-page-block-container {
-    @include main-page_block_card-container;
+    // @include main-page_block_card-container;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow-y: scroll;
 
     &::-webkit-scrollbar {
         display: none;
@@ -27,12 +51,17 @@
         max-height: 250px;
     }
 
-    /* from _fonts */
+    &-body {
+        min-height: 200px;
+        padding: 1rem 1rem 0;
+    }
+
     &__title {
         @include main_text;
     }
 
     &__text {
+        margin-top: 15%;
         font-family: $main-font;
         color: $text-color;
     }
@@ -106,6 +135,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .main-page-block-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .main-page-block {
         max-width: 100%;
@@ -133,6 +166,11 @@
 }
 
 @media screen and (max-width: 424px) {
+    .main-page-block-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .main-page-block__title {
         font-size: 1em;
     }

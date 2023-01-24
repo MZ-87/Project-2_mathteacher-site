@@ -14,21 +14,12 @@
 }
 
 //video, education
-.video-title,
-.education-title,
-.training-materials_title {
-    @include main_text;
-    font-size: 2em;
-    margin: 2rem auto;
-}
 
-.card-title,
 .edu-card__univers,
 .edu-card__years {
     @include main_text;
 }
 
-.card-text,
 .edu-card__prof {
     font-family: $main-font;
     color: $text-color;

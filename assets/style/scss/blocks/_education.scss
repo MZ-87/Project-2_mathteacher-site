@@ -3,9 +3,9 @@
     margin-top: 2rem;
 }
 
-// .education-title {
-//     margin: 2rem auto;
-// }
+.education-title {
+    @include main-page-block__title;
+}
 
 .education-container {
     display: flex;
