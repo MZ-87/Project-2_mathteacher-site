@@ -14,8 +14,10 @@ Cards in the block 'Video (Видео)' lead to the pages of a third party site,
 
 ## Technology stack
 <p>
-<img src="assets/img/readMe/HTML.png" alt="HTML" width="100rem"/>
-<img src="assets/img/readMe/CSS.png" alt="CSS" width="100rem"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" alt="HTML" width="80rem"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" alt="CSS" width="80rem"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" alt="SASS" width="80rem"/>
+
 </p>
 
 
